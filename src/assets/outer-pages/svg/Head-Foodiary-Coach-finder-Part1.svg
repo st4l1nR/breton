@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2165.501" height="185.691" viewBox="0 0 2165.501 185.691">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_21792" data-name="Pfad 21792" d="M-.217,176.106s413.533-49.8,715.616-29.2,429.439,43.5,740.738,36.5,453.9-29.184,652.483-20.667S1920.057-1,1920.057-1L-.217-.964Z" fill="#c72f2f"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.038" y1="0.036" x2="0.928" y2="0.736" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#37e3a8"/>
+      <stop offset="1" stop-color="#1c9d87"/>
+    </linearGradient>
+  </defs>
+  <g id="Gruppe_maskieren_692" data-name="Gruppe maskieren 692" transform="translate(0.217 1)" clip-path="url(#clip-path)">
+    <rect id="Rechteck_1871" data-name="Rechteck 1871" width="1932.309" height="220.631" transform="translate(-3.309 -3.641)" fill="url(#linear-gradient)"/>
+    <path id="Pfad_12182" data-name="Pfad 12182" d="M-197.9,969.725S-306.48,798.969-268.289,599.918c24.944-130.011,107.654-51.243,103.249-262.011s243.7-232.67,312.487-171.522S217.69,266.6,359.73,242.319,563.583,403.35,489.991,559.036c-64.444,136.335,145.48,122.658,20.689,411.07Z" transform="translate(1611.073 552.359) rotate(180)" fill="#1c9d87" opacity="0.32"/>
+  </g>
+</svg>

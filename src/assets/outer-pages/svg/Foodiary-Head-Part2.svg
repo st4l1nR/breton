@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1948.935" height="662.523" viewBox="0 0 1948.935 662.523">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_4941" data-name="Pfad 4941" d="M-.217,194.106s436.924-43.214,739.007,19.173,489.243,361.336,791.327,312.083,351.753-179.211,389.94-342.23V-1L-.217-.892Z" fill="#c72f2f"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.038" y1="0.036" x2="0.928" y2="0.736" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#37e3a8"/>
+      <stop offset="1" stop-color="#1c9d87"/>
+    </linearGradient>
+  </defs>
+  <g id="Gruppe_8154" data-name="Gruppe 8154" transform="translate(16.427 5.45)">
+    <path id="Pfad_12172" data-name="Pfad 12172" d="M-.217,194.106s436.924-43.214,739.007,19.173,489.243,361.336,791.327,312.083,348.1-179.506,386.291-342.525L1903.672.7.421,6.072Z" transform="matrix(0.998, 0.07, -0.07, 0.998, 20.817, -6.131)" fill="#f5faf9"/>
+    <g id="Gruppe_maskieren_610" data-name="Gruppe maskieren 610" clip-path="url(#clip-path)">
+      <rect id="Rechteck_701" data-name="Rechteck 701" width="1932.309" height="546.472" transform="translate(-3.309 -9)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Pfad_12182" data-name="Pfad 12182" d="M-198.142,550.844s-26.073,4.552-48.166,2.543c-23.1-2.1-41.726-13.024-21.981-86.406,24.944-92.707,107.654-36.54,103.249-186.832S78.66,114.24,147.447,157.842,217.69,229.3,359.73,211.989,563.583,326.815,489.991,437.83c-64.444,97.216,147.613-92.644,22.822,113.014Z" transform="translate(1611.29 553.359) rotate(180)" fill="#1c9d87" opacity="0.32"/>
+  </g>
+</svg>
