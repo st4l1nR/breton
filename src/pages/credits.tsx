@@ -10,7 +10,7 @@ type stepOption = '1a' | '1b' | '1c' | '1d';
 const index = () => {
   const useFormReturn = useForm<CreditFormInput>();
   const router = useRouter();
-  const [step, steStep] = useState<stepOption>('1a');
+  const [step, steStep] = useState<stepOption>('1b');
   const {
     handleSubmit,
     formState: { errors },
