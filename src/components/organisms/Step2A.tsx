@@ -16,7 +16,7 @@ const Step2A: React.FC<props> = ({ className, register, formState: { errors } })
         <div className="flex space-x-5 pb-5">
           <div className="circle"></div>
           <div>
-            <Title level="h5" text="Type de corporation" />
+            <Title level="h5" text="Cliquez sur les cases qui s’appliquent à votre projet :" />
             <div className="mt-7 flex flex-col space-y-5">
               <Checkbox label="Expansion des affaires" value="1" {...register('projectType')} />
               <Checkbox label="Investissements en capital" value="2" {...register('projectType')} />
@@ -33,7 +33,7 @@ const Step2A: React.FC<props> = ({ className, register, formState: { errors } })
         <div className="flex space-x-5 pb-5">
           <div className="circle"></div>
           <div>
-            <Title level="h5" text="Type de corporation" />
+            <Title level="h5" text="Comment votre projet bénéficie à l’économie Canadienne et aux Canadiens? Cliquez sur les cases qui s’appliquent :" />
             <div className="mt-7 flex flex-col space-y-5">
               <Checkbox label="Création d’emplois" value="1" {...register('benefit')} />
               <Checkbox label="Embauche de personnel technique" value="2" {...register('benefit')} />

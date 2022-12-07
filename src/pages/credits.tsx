@@ -24,7 +24,7 @@ const index = () => {
   const onSubmit = (formData: CreditFormInput) => {
     const { workState } = formData;
     if (step == '1a') {
-      if (workState) {
+      if (workState?.[0]) {
         handleNext('1b');
       } else {
         handleNext('1d');
@@ -47,18 +47,22 @@ const index = () => {
 
   return (
     <div>
-      <form className="mt-32 section-container" onSubmit={handleSubmit(onSubmit)}>
-        {step == '1a' ? (
-          <Step1A {...useFormReturn} />
-        ) : step == '1b' ? (
-          <Step1B {...useFormReturn} />
-        ) : step == '1c' ? (
-          <StepConfirmation variant="1c" {...useFormReturn} />
-        ) : (
-          <StepConfirmation variant="1d" {...useFormReturn} />
-        )}
-      </form>
-      {isConfirmation && <ContactForm className="mt-24" />}
+      {router?.query && (
+        <>
+          <form className="mt-32 section-container" onSubmit={handleSubmit(onSubmit)}>
+            {step == '1a' ? (
+              <Step1A {...useFormReturn} />
+            ) : step == '1b' ? (
+              <Step1B {...useFormReturn} />
+            ) : step == '1c' ? (
+              <StepConfirmation variant="1c" {...useFormReturn} />
+            ) : (
+              <StepConfirmation variant="1d" {...useFormReturn} />
+            )}
+          </form>
+          {isConfirmation && <ContactForm className="mt-24" />}
+        </>
+      )}
     </div>
   );
 };
