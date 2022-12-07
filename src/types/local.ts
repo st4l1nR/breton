@@ -5,7 +5,7 @@ export type CreditFormInput = {
   totalMaterials: number;
   totalSubcontractors: number;
   sourceFunding: string;
-  totalFunding: string;
+  totalFunding: number;
 };
 
 export type SubventionFormInput = {
