@@ -13,17 +13,17 @@ const Title: FC<props> = ({ className, level, text, align }) => {
   );
   switch (level) {
     case 'h1':
-      return <h1 className={classNames('text-6xl font-extrabold ', alignStyle, className)}>{text}</h1>;
+      return <h1 className={classNames('text-4xl sm:text-6xl font-extrabold ', alignStyle, className)}>{text}</h1>;
     case 'h2':
-      return <h2 className={classNames('text-4xl font-bold', alignStyle, className)}>{text}</h2>;
+      return <h2 className={classNames('text-3xl sm:text-4xl font-bold', alignStyle, className)}>{text}</h2>;
     case 'h3':
-      return <h3 className={classNames('text-3xl font-bold', alignStyle, className)}>{text}</h3>;
+      return <h3 className={classNames('text-2xl sm:text-3xl font-bold', alignStyle, className)}>{text}</h3>;
     case 'h4':
-      return <h4 className={classNames('text-2xl font-bold', alignStyle, className)}>{text}</h4>;
+      return <h4 className={classNames('text-xl sm:text-2xl font-bold', alignStyle, className)}>{text}</h4>;
     case 'h5':
-      return <h5 className={classNames('text-xl font-bold', alignStyle, className)}>{text}</h5>;
+      return <h5 className={classNames('text-lg sm:text-xl font-bold', alignStyle, className)}>{text}</h5>;
     case 'h6':
-      return <h6 className={classNames('text-lg font-bold', alignStyle, className)}>{text}</h6>;
+      return <h6 className={classNames('text-base sm:text-lg font-bold', alignStyle, className)}>{text}</h6>;
   }
 };
 Title.defaultProps = {

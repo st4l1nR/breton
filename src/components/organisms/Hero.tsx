@@ -15,18 +15,19 @@ const Hero: React.FC<props> = ({ className, variant }) => {
         src={variant == 'primary' ? '/images/hero.png' : '/images/jump-2.png'}
         alt=""
       />
-      <div className="relative z-10 text-white">
+      <div className="relative z-10 px-5 text-white">
         <Navbar />
         {variant == 'primary' ? (
           <div className="flex flex-col items-center max-w-4xl mx-auto mt-24 text-center ">
             <Title level="h1" text="Experts en crédits d’impôt R&D et subventions" />
             <ButtonLink
-              className="m-12 text-lg"
+              className="m-12 sm:w-[500px]"
               href="#contact"
               label="Contactez-nous pour une rencontre gratuite"
               icon={<Icon className="text-white" name="arrow-right" />}
               iconPosition="right"
               size="large"
+              fullWidth={true}
             />
           </div>
         ) : variant == 'secondary' ? (

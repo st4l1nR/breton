@@ -15,7 +15,7 @@ const Base: React.FC<props> = ({ className, prev, hideNext }) => {
   };
 
   return (
-    <div className={classNames('flex justify-between pt-10 border-t', className)}>
+    <div className={classNames('flex justify-center sm:justify-between pt-10 border-t space-x-5', className)}>
       <Button
         label="Precedent"
         color={prev ? 'primary' : 'neutral'}
