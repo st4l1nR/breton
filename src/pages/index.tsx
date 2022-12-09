@@ -6,7 +6,7 @@ import { LayoutDefault } from '@components/templates';
 const index = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 gap-5 mt-64 section-container sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 mt-24 section-container sm:grid-cols-2">
         <div className="card">
           <div>
             <Title level="h4" text="Crédits R&D (RS&DE)" />

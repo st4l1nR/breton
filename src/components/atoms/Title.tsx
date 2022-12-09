@@ -13,7 +13,7 @@ const Title: FC<props> = ({ className, level, text, align }) => {
   );
   switch (level) {
     case 'h1':
-      return <h1 className={classNames('text-5xl font-extrabold ', alignStyle, className)}>{text}</h1>;
+      return <h1 className={classNames('text-6xl font-extrabold ', alignStyle, className)}>{text}</h1>;
     case 'h2':
       return <h2 className={classNames('text-4xl font-bold', alignStyle, className)}>{text}</h2>;
     case 'h3':

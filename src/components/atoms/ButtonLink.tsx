@@ -78,7 +78,7 @@ const ButtonLink: FC<props> = ({
       ? 'text-xs py-1 py-2'
       : size == 'medium'
       ? 'text-sm'
-      : size == 'large' && 'text-sm sm:text-base'
+      : size == 'large' && 'text-sm sm:text-lg'
   );
 
   const shapeStyle = classNames(shape == 'pill' ? 'rounded-full' : shape == 'semibrick' && 'rounded-md');

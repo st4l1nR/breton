@@ -11,18 +11,18 @@ const Hero: React.FC<props> = ({ className, variant }) => {
   return (
     <div className={classNames('relative', className)}>
       <img
-        className="absolute top-0 left-0 z-0 w-full"
+        className="absolute top-0 left-0 z-0 object-cover object-center w-full h-screen aspect-square"
         src={variant == 'primary' ? '/images/hero.png' : '/images/jump-2.png'}
         alt=""
       />
       <div className="relative z-10 text-white">
         <Navbar />
         {variant == 'primary' ? (
-          <div className="flex flex-col items-center mt-24 text-center ">
+          <div className="flex flex-col items-center max-w-4xl mx-auto mt-24 text-center ">
             <Title level="h1" text="Experts en crédits d’impôt R&D et subventions" />
             <ButtonLink
               className="m-12 text-lg"
-              href="#"
+              href="#contact"
               label="Contactez-nous pour une rencontre gratuite"
               icon={<Icon className="text-white" name="arrow-right" />}
               iconPosition="right"
@@ -33,14 +33,14 @@ const Hero: React.FC<props> = ({ className, variant }) => {
           <div className="max-w-5xl mx-auto mt-24">
             <Title
               level="h2"
-              text="Chaque année, plus de 20 000 entreprises canadiennes de toute taille et de tout secteur se
-partagent trois milliards de dollars en incitatifs fiscaux dans le cadre du programme fédéral de
-la RS&DE. Seulement 50% des entreprises qui y ont droit réclament des crédits RS&DE. Remplissez le
-formulaire ci-joint pour savoir si votre projet se qualifie."
+              text={`Chaque année, plus de 20 000 entreprises canadiennes de toute taille et de tout secteur se
+              partagent trois milliards de dollars en incitatifs fiscaux dans le cadre du programme fédéral de
+              la RS&DE. Seulement 50% des entreprises qui y ont droit réclament des crédits RS&DE. Remplissez le
+              formulaire ci-joint pour savoir si votre projet se qualifie.`}
             />
           </div>
         ) : (
-          <div className="max-w-5xl mx-auto mt-16 text-base sm:text-3xl p-5">
+          <div className="max-w-5xl p-5 mx-auto mt-16 text-base sm:text-3xl">
             <p>
               Les entreprises font face à{' '}
               <span className="font-bold"> d’importants défis de financement.</span> Le marché compétitif

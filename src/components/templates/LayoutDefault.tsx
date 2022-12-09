@@ -9,7 +9,7 @@ const LayoutDefault: React.FC<props> = ({ variant, children }) => {
   return (
     <div className="bg-[#E5E5E5]">
       <Hero variant={variant} />
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-0">{children}</div>
       <Footer />
     </div>
   );

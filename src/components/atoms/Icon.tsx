@@ -103,6 +103,12 @@ const Logo2 = (props) => (
   </svg>
 );
 
+const Close = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06z" />
+  </svg>
+);
+
 const CheckIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -117,6 +123,12 @@ const CheckIcon = (props) => (
   </svg>
 );
 
+const Menu = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M3 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 5.25zm0 4.5A.75.75 0 0 1 3.75 9h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9.75zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75zm0 4.5a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75z" />
+  </svg>
+);
+
 export type props = {
   name:
     | 'arrow-right'
@@ -128,7 +140,9 @@ export type props = {
     | 'envelop'
     | 'logo1'
     | 'logo2'
-    | 'check';
+    | 'check'
+    | 'close'
+    | 'menu';
   className?: string;
 };
 const Icon: React.FC<props> = ({ name, ...props }) => {
@@ -154,6 +168,10 @@ const Icon: React.FC<props> = ({ name, ...props }) => {
       return <Logo2 {...props} />;
     case 'check':
       return <CheckIcon {...props} />;
+    case 'close':
+      return <Close {...props} />;
+    case 'menu':
+      return <Menu {...props} />;
   }
 };
 
