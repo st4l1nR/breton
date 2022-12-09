@@ -23,7 +23,7 @@ const Title: FC<props> = ({ className, level, text, align }) => {
     case 'h5':
       return <h5 className={classNames('text-lg sm:text-xl font-bold', alignStyle, className)}>{text}</h5>;
     case 'h6':
-      return <h6 className={classNames('text-base sm:text-lg font-bold', alignStyle, className)}>{text}</h6>;
+      return <h6 className={classNames('text-lg font-bold', alignStyle, className)}>{text}</h6>;
   }
 };
 Title.defaultProps = {

@@ -90,6 +90,6 @@
   }
 
   .circle {
-    @apply w-5 h-5 mt-1 rounded-full bg-primary-500;
+    @apply w-5 h-5 mt-1 rounded-full bg-primary-500 shrink-0;
   }
 }

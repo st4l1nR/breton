@@ -4,11 +4,12 @@ import Link from 'next/link';
 import { Disclosure } from '@headlessui/react';
 import { SwiperRightAnimation, Icon } from '@components/atoms';
 import { ClickAwayListener } from '@mui/material';
-
+import { useRouter } from 'next/router';
 export type props = {
   className?: string;
 };
 const Navbar: React.FC<props> = ({ className }) => {
+  const router = useRouter();
   return (
     <Disclosure>
       {({ close }) => (
@@ -39,19 +40,25 @@ const Navbar: React.FC<props> = ({ className }) => {
                     </Disclosure.Button>
                   </div>
                   <div className="mt-10 ">
-                    <img className="mx-auto" src="/icons/logo.svg" alt="pre meal" />
+                    <Disclosure.Button onClick={() => router.push('/')}>
+                      <img className="mx-auto" src="/icons/logo.svg" alt="betron" />
+                    </Disclosure.Button>
                   </div>
                   <ul className="flex flex-col p-2 mt-10 space-y-8 text-sm text-center list-disc">
                     <li>
-                      <Link href="/credits?step=1a">Crédits R&D (RS&DE) Éligibilité</Link>
+                      <Disclosure.Button onClick={() => router.push('/credits?step=1a')}>
+                        <p>Crédits R&D (RS&DE) Éligibilité</p>
+                      </Disclosure.Button>
                     </li>
                     <li>
-                      {' '}
-                      <Link href="/credits?step=1b">Crédits R&D (RS&DE) Calculateur</Link>
+                      <Disclosure.Button onClick={() => router.push('/credits?step=1b')}>
+                        <p>Crédits R&D (RS&DE) Calculateur</p>
+                      </Disclosure.Button>
                     </li>
                     <li>
-                      {' '}
-                      <Link href="/subventions">Subventions Admissibilité</Link>
+                      <Disclosure.Button onClick={() => router.push('/subventions')}>
+                        <p>Subventions Admissibilité</p>
+                      </Disclosure.Button>
                     </li>
                   </ul>
                 </div>

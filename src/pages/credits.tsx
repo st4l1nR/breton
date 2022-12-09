@@ -49,7 +49,7 @@ const index = () => {
     <div>
       {router?.query && (
         <>
-          <form className="mt-32 section-container" onSubmit={handleSubmit(onSubmit)}>
+          <form className="mt-32 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
             {step == '1a' ? (
               <Step1A {...useFormReturn} />
             ) : step == '1b' ? (

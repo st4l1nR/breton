@@ -13,7 +13,7 @@ const Radio = React.forwardRef<any, props>(({ className, color, label, error, ..
     <div className={className}>
       <div className="flex items-center">
         <input type="checkbox" className={color == 'primary' && 'checkbox-primary'} ref={ref} {...props} />
-        {label && <label className="ml-2 input-label ">{label}</label>}
+        {label && <label className="ml-4 input-label ">{label}</label>}
       </div>
       {error && <p className="mt-1 ml-1 text-xs text-red-500 ">{error}</p>}
     </div>
