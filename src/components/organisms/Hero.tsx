@@ -33,7 +33,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
         ) : variant == 'secondary' ? (
           <div className="max-w-5xl mx-auto mt-24">
             <Title
-              level="h2"
+              level="h3"
               text={`Chaque année, plus de 20 000 entreprises canadiennes de toute taille et de tout secteur se
               partagent trois milliards de dollars en incitatifs fiscaux dans le cadre du programme fédéral de
               la RS&DE. Seulement 50% des entreprises qui y ont droit réclament des crédits RS&DE. Remplissez le
@@ -41,7 +41,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
             />
           </div>
         ) : (
-          <div className="max-w-5xl p-5 mx-auto mt-14 text-base sm:text-3xl font-bold">
+          <div className="max-w-5xl p-5 mx-auto mt-10 sm:mt-14 text-base sm:text-3xl font-bold">
             <p>
               Les entreprises font face à{' '}
               <span className="font-bold"> d’importants défis de financement.</span> Le marché compétitif
