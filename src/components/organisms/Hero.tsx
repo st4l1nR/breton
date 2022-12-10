@@ -11,7 +11,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
   return (
     <div className={classNames('relative', className)}>
       <img
-        className="absolute top-0 left-0 z-0 object-cover object-center w-full h-screen aspect-square"
+        className="absolute top-0 left-0 z-0 object-cover object-center w-full h-screen "
         src={variant == 'primary' ? '/images/hero.png' : '/images/jump-2.png'}
         alt=""
       />
@@ -41,7 +41,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
             />
           </div>
         ) : (
-          <div className="max-w-5xl p-5 mx-auto mt-16 text-base sm:text-3xl">
+          <div className="max-w-5xl p-5 mx-auto mt-10 text-base sm:text-4xl font-bold">
             <p>
               Les entreprises font face à{' '}
               <span className="font-bold"> d’importants défis de financement.</span> Le marché compétitif
