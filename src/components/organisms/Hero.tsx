@@ -41,7 +41,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
             />
           </div>
         ) : (
-          <div className="max-w-5xl p-5 mx-auto mt-10 sm:mt-14 text-base sm:text-3xl font-bold">
+          <div className="max-w-5xl p-5 mx-auto mt-8 text-base font-bold sm:mt-14 sm:text-xl lg:text-3xl">
             <p>
               Les entreprises font face à{' '}
               <span className="font-bold"> d’importants défis de financement.</span> Le marché compétitif

@@ -41,7 +41,7 @@ const index = () => {
 
   return (
     <div>
-      <form className="mt-32 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
+      <form className="mt-10 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
         {step == '2a' ? (
           <Step2A {...useFormReturn} />
         ) : step == '2b' ? (
