@@ -12,7 +12,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
     <div className={classNames('relative', className)}>
       <img
         className="absolute top-0 left-0 z-0 object-cover object-center w-full h-screen "
-        src={variant == 'primary' ? '/images/hero.png' : '/images/jump-2.png'}
+        src='/images/hero.png'
         alt=""
       />
       <div className="relative z-10 px-5 text-white">
