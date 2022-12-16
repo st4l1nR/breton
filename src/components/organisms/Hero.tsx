@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from '@lib/classNames';
 import Navbar from './Navbar';
-import { ButtonLink, Title, Icon } from '@components/atoms';
+import { Button, Title, Icon } from '@components/atoms';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export type props = {
   variant?: 'primary' | 'secondary' | 'third';
@@ -20,15 +21,16 @@ const Hero: React.FC<props> = ({ className, variant }) => {
         {variant == 'primary' ? (
           <div className="flex flex-col items-center max-w-4xl mx-auto mt-24 text-center ">
             <Title level="h1" text="Experts en crédits d’impôt R&D et subventions" />
-            <ButtonLink
-              className="m-12 sm:w-[500px]"
-              href="#contact"
-              label="Contactez-nous pour une rencontre gratuite"
-              icon={<Icon className="text-white" name="arrow-right" />}
-              iconPosition="right"
-              size="large"
-              fullWidth={true}
-            />
+            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+              <Button
+                className="m-12 sm:w-[500px]"
+                label="Contactez-nous pour une rencontre gratuite"
+                icon={<Icon className="text-white" name="arrow-right" />}
+                iconPosition="right"
+                size="large"
+                fullWidth={true}
+              />
+            </Link>
           </div>
         ) : variant == 'secondary' ? (
           <div className="max-w-5xl mx-auto mt-24">
