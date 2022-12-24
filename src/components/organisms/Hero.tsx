@@ -23,7 +23,7 @@ const Hero: React.FC<props> = ({ className, variant }) => {
             <Title level="h1" text="Experts en crédits d’impôt R&D et subventions" />
             <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
               <Button
-                className="m-12 sm:w-[500px]"
+                className="my-12 sm:w-[500px]"
                 label="Contactez-nous pour une rencontre gratuite"
                 icon={<Icon className="text-white" name="arrow-right" />}
                 iconPosition="right"
