@@ -77,7 +77,7 @@ const Step1B: React.FC<props> = ({ className, register, formState: { errors }, c
               <div>
                 <Controller
                   name="totalSalaries"
-                  rules={{ required: 'Obligatore' }}
+                  rules={{ required: 'Obligatoire' }}
                   render={({ field: { onChange, value } }) => (
                     <NumericFormat
                       className="textfield-primary w-full max-w-md"
@@ -109,7 +109,7 @@ const Step1B: React.FC<props> = ({ className, register, formState: { errors }, c
               <div>
                 <Controller
                   name="totalMaterials"
-                  rules={{ required: 'Obligatore' }}
+                  rules={{ required: 'Obligatoire' }}
                   render={({ field: { onChange, value } }) => (
                     <NumericFormat
                       className="textfield-primary w-full max-w-md"
@@ -144,7 +144,7 @@ const Step1B: React.FC<props> = ({ className, register, formState: { errors }, c
               <div>
                 <Controller
                   name="totalSubcontractors"
-                  rules={{ required: 'Obligatore' }}
+                  rules={{ required: 'Obligatoire' }}
                   render={({ field: { onChange, value } }) => (
                     <NumericFormat
                       className="textfield-primary w-full max-w-md"
@@ -190,7 +190,7 @@ const Step1B: React.FC<props> = ({ className, register, formState: { errors }, c
               <div>
                 <Controller
                   name="totalFunding"
-                  rules={{ required: 'Obligatore' }}
+                  rules={{ required: 'Obligatoire' }}
                   render={({ field: { onChange, value } }) => (
                     <NumericFormat
                       className="textfield-primary w-full max-w-md"
