@@ -65,32 +65,22 @@ const ContactForm: React.FC<props> = ({ className }) => {
             <TextField
               label="Prénom"
               error={errors.firstName?.message}
-              {...register('firstName', { required: 'Required' })}
+              {...register('firstName', { required: 'Obligatoire' })}
             />{' '}
             <TextField
               label="Nom"
               error={errors.lastName?.message}
-              {...register('lastName', { required: 'Required' })}
+              {...register('lastName', { required: 'Obligatoire' })}
             />
           </div>
           <TextField
             label="Courriel"
             type="email"
             error={errors.email?.message}
-            {...register('email', { required: 'Required' })}
+            {...register('email', { required: 'Obligatoire' })}
           />
-          <TextField
-            type="phone"
-            label="Téléphone"
-            error={errors.phone?.message}
-            {...register('phone', { required: 'Required' })}
-          />
-          <TextArea
-            rows={8}
-            label="Message"
-            error={errors.message?.message}
-            {...register('message', { required: 'Required' })}
-          />
+          <TextField type="phone" label="Téléphone" error={errors.phone?.message} {...register('phone')} />
+          <TextArea rows={8} label="Message" error={errors.message?.message} {...register('message')} />
           <Button type="submit" label="Envoyer" fullWidth={true} loading={loading} />
         </form>
       </div>

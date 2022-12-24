@@ -8,7 +8,11 @@ import { CreditFormInput } from '@ctypes/local';
 type stepOption = '1a' | '1b' | '1c' | '1d';
 
 const index = () => {
-  const useFormReturn = useForm<CreditFormInput>();
+  const useFormReturn = useForm<CreditFormInput>({
+    defaultValues: {
+      corporationType: 'sppc',
+    },
+  });
   const router = useRouter();
   const [step, steStep] = useState<stepOption>('1a');
   const {
@@ -18,7 +22,7 @@ const index = () => {
   const isConfirmation = step == '1c' || step == '1d';
 
   const handleNext = (step) => {
-    router.push(`/credits/?step=${step}`, undefined, { shallow: true });
+    router.push(`/credits/?step=${step}#focus`, undefined, { shallow: true });
   };
 
   const onSubmit = (formData: CreditFormInput) => {
@@ -49,7 +53,7 @@ const index = () => {
     <div>
       {router?.query && (
         <>
-          <form className="mt-32 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
+          <form id="focus" className="mt-32 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
             {step == '1a' ? (
               <Step1A {...useFormReturn} />
             ) : step == '1b' ? (

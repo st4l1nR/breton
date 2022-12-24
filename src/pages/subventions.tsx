@@ -18,7 +18,7 @@ const index = () => {
   const isConfirmation = step == '2b' || step == '2c';
 
   const handleNext = (step) => {
-    router.push(`/subventions/?step=${step}`, undefined, { shallow: true });
+    router.push(`/subventions/?step=${step}#focus`, undefined, { shallow: true });
   };
 
   const onSubmit = (formData: SubventionFormInput) => {
@@ -41,7 +41,7 @@ const index = () => {
 
   return (
     <div>
-      <form className="mt-10 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
+      <form id="focus" className="mt-10 text-lg section-container" onSubmit={handleSubmit(onSubmit)}>
         {step == '2a' ? (
           <Step2A {...useFormReturn} />
         ) : step == '2b' ? (

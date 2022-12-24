@@ -21,6 +21,7 @@ const Navbar: React.FC<props> = ({ className }) => {
               </Link>
 
               <div className="items-center hidden max-w-xl space-x-3 text-lg font-bold text-center text-white md:flex">
+                <Link href="/">Page D'accueil</Link>
                 <Link href="/credits?step=1a">Crédits R&D (RS&DE) Éligibilité</Link>
                 <Link href="/credits?step=1b">Crédits R&D (RS&DE) Calculateur</Link>
                 <Link href="/subventions">Subventions Admissibilité</Link>
@@ -39,12 +40,18 @@ const Navbar: React.FC<props> = ({ className }) => {
                       <Icon name="close" />
                     </Disclosure.Button>
                   </div>
+
                   <div className="mt-10 ">
                     <Disclosure.Button onClick={() => router.push('/')}>
                       <img className="mx-auto" src="/icons/logo.svg" alt="betron" />
                     </Disclosure.Button>
                   </div>
                   <ul className="flex flex-col p-2 mt-10 space-y-8 text-sm text-center list-disc">
+                    <li>
+                      <Disclosure.Button onClick={() => router.push('/')}>
+                        <p>Page D'accueil</p>
+                      </Disclosure.Button>
+                    </li>
                     <li>
                       <Disclosure.Button onClick={() => router.push('/credits?step=1a')}>
                         <p>Crédits R&D (RS&DE) Éligibilité</p>

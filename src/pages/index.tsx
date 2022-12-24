@@ -2,7 +2,7 @@ import React from 'react';
 import { Title } from '@components/atoms';
 import { ContactForm } from '@components/organisms';
 import { LayoutDefault } from '@components/templates';
-
+import Link from 'next/link';
 const index = () => {
   return (
     <div>
@@ -13,15 +13,21 @@ const index = () => {
             <p className="mt-5">
               Le programme fédéral le plus important pour encourager les entreprises à prendre des risques
               technologiques. Nous vous aidons à monter le dossier, remplir les formulaires et vous assistent
-              en cas d’audit. Allez sur l’onglet pour savoir si votre projet est éligible et combien vous sera
-              remboursé.
+              en cas d’audit. Allez sur{' '}
+              <Link className="underline" href="/credits?step=1a">
+                l’onglet
+              </Link>{' '}
+              pour savoir si votre projet est éligible et quel montant vous sera remboursé.
             </p>
           </div>
           <div className="mt-8">
             <Title level="h4" text="Subventions" />
             <p className="mt-5">
               Vous cherchez du financement pour vos projets? Des centaines de programmes gouvernementaux sont
-              disponibles avec des montants allant de milliers à des millions de dollars. Allez sur l’onglet
+              disponibles avec des montants allant de milliers à des millions de dollars. Allez sur{' '}
+              <Link className="underline" href="/subventions">
+                l’onglet
+              </Link>{' '}
               pour savoir si votre projet est admissible.
             </p>
           </div>
