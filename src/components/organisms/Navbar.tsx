@@ -20,7 +20,7 @@ const Navbar: React.FC<props> = ({ className }) => {
                 <Icon className="w-auto h-8" name="logo1" />
               </Link>
 
-              <div className="items-center hidden max-w-xl space-x-3 text-lg font-bold text-center text-white md:flex">
+              <div className="items-center hidden max-w-2xl space-x-3 text-lg font-bold text-center text-white md:flex">
                 <Link href="/">Page D'accueil</Link>
                 <Link href="/credits?step=1a">Crédits R&D (RS&DE) Éligibilité</Link>
                 <Link href="/credits?step=1b">Crédits R&D (RS&DE) Calculateur</Link>
