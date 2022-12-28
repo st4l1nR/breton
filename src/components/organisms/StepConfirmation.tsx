@@ -16,10 +16,10 @@ const variants = {
   },
   '1d': {
     header: 'Contactez-nous pour en savoir plus',
-    description: 'Ou appuyez sur le bouton en dessous',
+    description: 'Ou appuyez sur le bouton ci-dessous',
     button: {
       href: 'https://www.canada.ca/fr/agence-revenu/services/recherche-scientifique-developpement-experimental-programme-encouragements-fiscaux/politiques-procedures-lignesdirectrices/lignes-directrices-admissibilite-travaux-rdse-encouragements-fiscaux.html',
-      label: 'En Savoir Plus',
+      label: 'En savoir plus',
       icon: <Icon className="transform -rotate-45 w-3 h-3" name="arrow-right" />,
       iconPosition: 'right',
     },

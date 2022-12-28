@@ -65,11 +65,13 @@ const ContactForm: React.FC<props> = ({ className }) => {
             <TextField
               label="Prénom"
               error={errors.firstName?.message}
+              required
               {...register('firstName', { required: 'Obligatoire' })}
             />{' '}
             <TextField
               label="Nom"
               error={errors.lastName?.message}
+              required
               {...register('lastName', { required: 'Obligatoire' })}
             />
           </div>
@@ -77,6 +79,7 @@ const ContactForm: React.FC<props> = ({ className }) => {
             label="Courriel"
             type="email"
             error={errors.email?.message}
+            required
             {...register('email', { required: 'Obligatoire' })}
           />
           <TextField type="phone" label="Téléphone" error={errors.phone?.message} {...register('phone')} />

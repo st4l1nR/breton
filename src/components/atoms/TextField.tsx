@@ -11,13 +11,17 @@ export type props = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputE
     fullWidth?: boolean;
   };
 const TextField = React.forwardRef<any, props>(
-  ({ className, color, label, error, type, fullWidth, ...props }, ref) => {
+  ({ className, color, label, error, type, fullWidth, required, ...props }, ref) => {
     return (
       <div className={classNames(fullWidth && 'w-full', className)}>
-        {label && <label className="input-label">{label}</label>}
+        {label && (
+          <label className="input-label">
+            {label} {required && <span className="text-red-500">*</span>}
+          </label>
+        )}
         <input
           type={type}
-          className={classNames('textfield-primary', fullWidth && 'w-full', label && "mt-1")}
+          className={classNames('textfield-primary', fullWidth && 'w-full', label && 'mt-1')}
           ref={ref}
           {...props}
         />
