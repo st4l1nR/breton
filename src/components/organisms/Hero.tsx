@@ -41,10 +41,10 @@ const Hero: React.FC<props> = ({ className, variant }) => {
               Chaque année, plus de 20 000 entreprises canadiennes de toute taille et de tout secteur se
               partagent trois milliards de dollars en incitatifs fiscaux dans le cadre du programme fédéral de
               la RS&DE. Seulement 50% des entreprises qui y ont droit réclament des crédits RS&DE.{' '}
-              {step == '1a' || step == '1b'
+              {step == '1a'
                 ? 'Remplissez le formulaire ci-joint pour savoir si votre projet se qualifie.'
-                : step == '1c' &&
-                  'Rempliessez le formula ci-joint pour savoir quel montant vous sera rembourser.'}
+                : step == '1b' &&
+                  'Remplissez le formulaire ci-joint pour savoir quel montant vous sera rembourser.'}
             </p>
           </div>
         ) : (
