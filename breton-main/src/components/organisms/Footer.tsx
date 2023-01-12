@@ -10,7 +10,7 @@ const Footer: React.FC<props> = ({ className }) => {
     <div className={classNames('py-12 bg-[#04050F] mt-24', className)}>
       <div className="flex flex-col items-center h-full gap-5 text-center text-white section-container sm:flex-row sm:justify-between ">
         <Link href="/">
-          <Icon className="w-auto h-6" name="logo2" />
+            <img className="w-auto h-6" src="/icons/logo-secondary.svg" />
         </Link>
 
         <p>© 2022 Bensouda Breton - All Rights Reserved.</p>

@@ -17,7 +17,7 @@ const Navbar: React.FC<props> = ({ className }) => {
           <div className={classNames('h-32 flex items-center', className)}>
             <div className="flex justify-between w-full section-container">
               <Link href="/">
-                <Icon className="w-auto h-8" name="logo1" />
+                <img className="w-auto h-8" src="/icons/logo.svg" />
               </Link>
 
               <div className="items-center hidden max-w-2xl space-x-3 text-lg font-bold text-center text-white md:flex">
@@ -43,28 +43,29 @@ const Navbar: React.FC<props> = ({ className }) => {
 
                   <div className="mt-10 ">
                     <Disclosure.Button onClick={() => router.push('/')}>
-                      <img className="mx-auto" src="/icons/logo.svg" alt="betron" />
+                    <img className="w-auto h-7" src="/icons/logo.svg" />
                     </Disclosure.Button>
                   </div>
-                  <ul className="flex flex-col p-2 mt-10 space-y-8 text-sm text-left list-disc">
+                  <ul className="flex flex-col p-2 mt-10 space-y-8 text-sm list-disc">
                     <li>
                       <Disclosure.Button onClick={() => router.push('/')}>
-                        <p>Page d'accueil</p>
+                        <p className="text-left">Page d'accueil</p>
                       </Disclosure.Button>
                     </li>
                     <li>
                       <Disclosure.Button onClick={() => router.push('/credits?step=1a')}>
-                        <p>Crédits R&D (RS&DE) Éligibilité</p>
+                        <p className="text-left">Crédits R&D (RS&DE) Éligibilité</p>
                       </Disclosure.Button>
                     </li>
                     <li>
                       <Disclosure.Button onClick={() => router.push('/credits?step=1b')}>
-                        <p>Crédits R&D (RS&DE) Calculateur</p>
+                        <p className="text-left">Crédits R&D (RS&DE) Calculateur</p>
                       </Disclosure.Button>
                     </li>
                     <li>
                       <Disclosure.Button onClick={() => router.push('/subventions')}>
-                        <p>Subventions Admissibilité</p>
+                        <p className="text-left">Subventions </p>
+                        <p>Admissibilité</p>
                       </Disclosure.Button>
                     </li>
                   </ul>
